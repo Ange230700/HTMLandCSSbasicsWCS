@@ -64,6 +64,7 @@ section article {
   border-radius: 5px;
   min-width: calc((65ch / 2) - 20px);
   display: inline-block;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 footer {
