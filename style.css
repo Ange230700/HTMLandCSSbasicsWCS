@@ -18,6 +18,9 @@ body {
   line-height: var(--line-height);
   font-family: var(--font-family);
   background: var(--webpage-background-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 nav {
@@ -34,7 +37,11 @@ nav {
 
 nav h1 {
   color: var(--secondary-font-color);
-  font-size: clamp(calc(var(--standard-font-size) * 1.3), 5vw, calc(var(--standard-font-size) * 1.7));
+  font-size: clamp(
+    calc(var(--standard-font-size) * 1.3),
+    5vw,
+    calc(var(--standard-font-size) * 1.7)
+  );
   flex: 1;
   padding-top: 22px;
   text-align: center;
@@ -70,11 +77,6 @@ nav ul li a {
   text-decoration: none;
   color: var(--secondary-font-color);
   font-size: calc(var(--standard-font-size) * 0.9);
-}
-
-@media screen and (360px < width <= 1200px) {
-  nav ul li a {
-  }
 }
 
 header {
@@ -146,4 +148,5 @@ footer {
   background-color: var(--primary-color);
   color: var(--secondary-font-color);
   padding: 10px;
+  margin-top: auto;
 }
